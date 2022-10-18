@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}тестовая форма{% endblock %}
+
+{% block body %}
+    <form method="POST" action="{{ path('handleUpload') }}" enctype="multipart/form-data">
+        <input class="input" type="file" name="image">
+        <button type="submit" class="button">Загрузить</button>
+    </form>
+{% endblock %}
